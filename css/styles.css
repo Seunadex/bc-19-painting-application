@@ -1,0 +1,113 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(to right, #33ccff 1%, #ff99cc 100%);
+}
+
+#canvas {
+	display: block;
+	background-color: white;
+	position: relative;
+	top: 5px;
+	left: 5px;
+	box-shadow: 2px 3px 3px blue;
+	border-radius: 10px;
+	cursor: crosshair;
+}
+#toolbar {
+	width: 150px;
+	height: 60px
+	padding: 10px;
+	position: fixed;
+	top: 200px;
+	left: 1100px;
+	background-color: #2f2f2f;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px orange;
+	cursor: pointer;
+
+}
+#colors{
+	position: absolute;
+	top: 300px;
+	left: 1100px;
+	border-radius: 5px;
+}
+
+#set {
+	position: absolute;
+	top: 340px;
+	left: 1100px;
+}
+
+#set button{
+		background-color: #ff4d4d;
+	color: #3333ff;
+	border-radius: 5px;
+}
+
+.box{
+	position: absolute;
+	top: 400px;
+	left: 1100px;
+}
+#Clear{
+	width: 90px;
+	height: 30px;
+	font-size: 20px;
+	color: #3333ff;
+	background-color: #ff4d4d;
+	border-radius: 5px;
+	box-shadow: 1px 2px 3px #990000;
+}
+
+#erase{
+	width: 90px;
+	height: 30px;
+	font-size: 20px;
+	color: #3333ff;
+	background-color: #ff4d4d;
+	border-radius: 5px;
+	box-shadow: 1px 2px 3px #990000;
+}
+
+#save{
+	width: 90px;
+	height: 30px;
+	font-size: 20px;
+	color: #3333ff;
+	background-color: #ff4d4d;
+	border-radius: 5px;
+	box-shadow: 1px 2px 3px #990000;
+}
+
+.radcontrol {
+	width: 30px;
+	height: 30px;
+	background-color: #4f4f4f;
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+}
+
+
+h1 {
+	position: absolute;
+	top: 30px;
+	left: 1030px;
+	font-size: 50px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #543979;
+	box-shadow: 2px 3px 3px blue;
+	text-shadow: 1px 2px 3px #990000
+}
