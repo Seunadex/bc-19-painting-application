@@ -27,8 +27,9 @@ body {
 	width: 150px;
 	height: 60px
 	padding: 10px;
+	padding-left: 15px;
 	position: fixed;
-	top: 200px;
+	top: 150px;
 	left: 1100px;
 	background-color: #2f2f2f;
 	color: white;
@@ -39,14 +40,14 @@ body {
 }
 #colors{
 	position: absolute;
-	top: 300px;
+	top: 200px;
 	left: 1100px;
 	border-radius: 5px;
 }
 
 #set {
 	position: absolute;
-	top: 340px;
+	top: 250px;
 	left: 1100px;
 }
 
@@ -56,13 +57,11 @@ body {
 	border-radius: 5px;
 }
 
-.box{
+#Clear{
 	position: absolute;
 	top: 400px;
 	left: 1100px;
-}
-#Clear{
-	width: 90px;
+	width: 100px;
 	height: 30px;
 	font-size: 20px;
 	color: #3333ff;
@@ -72,7 +71,10 @@ body {
 }
 
 #erase{
-	width: 90px;
+	position: absolute;
+	top: 350px;
+	left: 1100px;
+	width: 100px;
 	height: 30px;
 	font-size: 20px;
 	color: #3333ff;
@@ -82,7 +84,10 @@ body {
 }
 
 #save{
-	width: 90px;
+	position: absolute;
+	top: 450px;
+	left: 1100px;
+	width: 100px;
 	height: 30px;
 	font-size: 20px;
 	color: #3333ff;
@@ -103,11 +108,90 @@ body {
 
 h1 {
 	position: absolute;
-	top: 30px;
+	top: 10px;
 	left: 1030px;
 	font-size: 50px;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	color: #543979;
 	box-shadow: 2px 3px 3px blue;
 	text-shadow: 1px 2px 3px #990000
+}
+button {
+	cursor: pointer;
+}
+
+footer {
+	text-align: center;
+}
+
+@-webkit-keyframes hvr-wobble-top {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+@keyframes hvr-wobble-top {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+.hvr-wobble-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.hvr-wobble-top:hover, .hvr-wobble-top:focus, .hvr-wobble-top:active {
+  -webkit-animation-name: hvr-wobble-top;
+  animation-name: hvr-wobble-top;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
