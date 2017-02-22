@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>InstantPaint</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" href="fonts/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet"
+    href="./font-awesome-4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
 
   <h1>InstantPaint</h1>
   <div id="toolbar">
 	  <div id="rad">
-		  Radius <span id="radval">10</span>
+		  Radius <!-- <span id="radval"></span> -->
 		  <div id="decrad" class="radcontrol">-</div>
 		  <div id="incrad" class="radcontrol">+</div>
 	  </div>
@@ -26,18 +28,25 @@
       <button onclick='newColor()'>Set</button>
       <span id='colorValue'>color:</span>
     </div class="box">
-      <button id='Clear' onclick='clearCanvas()'>Clear</button>
-    	<button id='erase'>Erase</button>
-    	<button id='save'>Save</button>
+      <button id='Clear' onclick='clearCanvas()'><i class="fa fa-scissors" aria-hidden="true"></i> Clear</button>
+    	<button id='erase'><i class="fa fa-eraser" aria-hidden="true"></i> Erase</button>
+    	<button id='save'><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
     </div>
 
   <canvas id="canvas" width="1000" height="600">
 	If this text diplays, your browser  is crap, change or update it ASAP!!!
   </canvas>
 
-	<!-- coming soon
-	 <script src="main.js"></script>
-	<script src="radius.js"></script>
-	<script src="color.js"></script> -->
+
+  <hr>
+  <footer>
+    <p>&copy; 2017 InstantPaint, Inc.</p>
+  </footer>
+
+
+	 <script src="js/main.js"></script>
+	<script src="js/brush_size.js"></script>
+	<script src="js/color.js"></script> 
+
 </body>
 </html>
