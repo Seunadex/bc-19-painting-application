@@ -1,56 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>InstantPaint</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet"
-    href="./font-awesome-4.7.0/css/font-awesome.min.css"/>
+  <title>Welcome to InstaPaint</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
 
-  <h1>InstantPaint</h1>
-  <div id="toolbar" class="col-1">
-	  <div id="rad">
-		  Radius <span id="radvalue"></span>
-		  <div id="decrad" class="radctrl">-</div>
-		  <div id="incrad" class="radctrl">+</div>
-	  </div>
-	</div>
-
-  <div id='colors' class="col-2">
-    <label>Change Color</label>
-    <input id='color' type="color" onchange='changeColor("value")' ontouchstart='changeColor("value")'/>
-   </div>
-
-   <div id="set" class="col-3">
-      <button  onclick='newColor()'>Set</button>
-      <span id='colorValue'>color:</span>
+  <div class="container">
+    <div class="brush">
+      <div class="brush-overlay">
+        <h1>InstantPaint</h1>
+        <p>Welcome to InstantPaint, click button below to start painting</p>
+        <i class="fa fa-hand-o-down fa-3x" aria-hidden="true"></i> <br>
+        <button class="button"><a href="home.html">Enter</a></button>
+      </div>
     </div>
-    <div id="box" class="col-4">
-      <button><a href="#" id='Clear' onclick='clearCanvas()'><i class="fa fa-scissors" aria-hidden="true"></i> Clear</a></button>
-    	<button><a href="#" id='erase' class="erase-btn"><i class="fa fa-eraser" aria-hidden="true"></i> Erase</a></button>
-    	<button><a href="#" id='save' class="save-btn" download="my-file-name.png"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</a></button>
-    </div>
+  </div>
 
-
-<canvas id="canvas" width="950" height="600" class="col-5">
-	If this text diplays, your browser  is crap, change or update it ASAP!!!
-  </canvas>
-
-
-  <footer class="col-6">
-  <hr>
-    <p>&copy; 2017 InstantPaint, Inc.</p>
-  </footer>
-
-
-	<script src="js/main.js"></script>
-	<script src="js/brush_size.js"></script>
-	<script src="js/color.js"></script> 
-  <script src="js/erase.js"></script>
-  <script src="js/saveDrawing.js"></script>
 
 </body>
 </html>
