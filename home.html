@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
-<canvas id="canvas" width="950" height="600" class="col-5">
+<canvas id="canvas" width="950" height="590" class="col-5">
 	If this text diplays, your browser  is crap, change or update it ASAP!!!
   </canvas>
 
@@ -32,13 +32,15 @@
       <span id='colorValue'>color:</span>
     </div>
     <div id="box" class="col-4">
-      <button><a href="#" id='Clear' onclick='clearCanvas()'><i class="fa fa-scissors" aria-hidden="true"></i> Clear</a></button>
-    	<button><a href="#" id='erase' class="erase-btn"><i class="fa fa-eraser" aria-hidden="true"></i> Erase</a></button>
+      <button onclick='clearCanvas()' id='Clear'><i class="fa fa-scissors" aria-hidden="true"></i> Clear</button>
+    	<button onclick="erasePart()" id='erase'><i class="fa fa-eraser" aria-hidden="true"></i> Erase</a></button>
     	<button><a href="#" class="save_btn" id='save' download="my-file-name.png"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</a></button>
     </div>
 
+
   <footer class="col-6">
-  <hr>
+  <a href="github.com/seunadex" alt="github"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/adekunle.o.oladele"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
     <p>&copy; Adekunle Seun. 2017</p>
   </footer>
 

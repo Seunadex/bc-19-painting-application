@@ -71,7 +71,7 @@ body {
 	background-color: blue;
 }
 
-#Clear{
+#Clear {
 	text-decoration: none;
 	font-size: 15px;
 	color: #ffffff;
@@ -80,7 +80,7 @@ body {
   margin-top: 20px;
 }
 
-#erase{
+#erase {
 	text-decoration: none;
 	font-size: 15px;
 	color: #ffffff;;
@@ -88,7 +88,7 @@ body {
 	margin: 20px;
 }
 
-#save{
+#save {
 	font-size: 15px;
 	color: #ffffff;
 	text-shadow: 1px 2px 3px #990000;
@@ -136,6 +136,7 @@ footer {
 	top: 600px;
 	text-align: center;
 	text-shadow: #EEEE00 0 0 10px;
+	line-height: 30%;
 }
 
 
