@@ -11,42 +11,46 @@
 <body>
 
   <h1>InstantPaint</h1>
-  <div id="toolbar">
+  <div id="toolbar" class="col-1">
 	  <div id="rad">
-		  Radius <!-- <span id="radval"></span> -->
-		  <div id="decrad" class="radcontrol">-</div>
-		  <div id="incrad" class="radcontrol">+</div>
+		  Radius <span id="radvalue"></span>
+		  <div id="decrad" class="radctrl">-</div>
+		  <div id="incrad" class="radctrl">+</div>
 	  </div>
 	</div>
 
-  <div id='colors'>
+  <div id='colors' class="col-2">
     <label>Change Color</label>
     <input id='color' type="color" onchange='changeColor("value")' ontouchstart='changeColor("value")'/>
    </div>
 
-   <div id="set">
-      <button onclick='newColor()'>Set</button>
+   <div id="set" class="col-3">
+      <button  onclick='newColor()'>Set</button>
       <span id='colorValue'>color:</span>
-    </div class="box">
-      <button id='Clear' onclick='clearCanvas()'><i class="fa fa-scissors" aria-hidden="true"></i> Clear</button>
-    	<button id='erase'><i class="fa fa-eraser" aria-hidden="true"></i> Erase</button>
-    	<button id='save'><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+    </div>
+    <div id="box" class="col-4">
+      <button><a href="#" id='Clear' onclick='clearCanvas()'><i class="fa fa-scissors" aria-hidden="true"></i> Clear</a></button>
+    	<button><a href="#" id='erase' class="erase-btn"><i class="fa fa-eraser" aria-hidden="true"></i> Erase</a></button>
+    	<button><a href="#" id='save' class="save-btn" download="my-file-name.png"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</a></button>
     </div>
 
-  <canvas id="canvas" width="1000" height="600">
+
+<canvas id="canvas" width="950" height="600" class="col-5">
 	If this text diplays, your browser  is crap, change or update it ASAP!!!
   </canvas>
 
 
+  <footer class="col-6">
   <hr>
-  <footer>
     <p>&copy; 2017 InstantPaint, Inc.</p>
   </footer>
 
 
-	 <script src="js/main.js"></script>
+	<script src="js/main.js"></script>
 	<script src="js/brush_size.js"></script>
 	<script src="js/color.js"></script> 
+  <script src="js/erase.js"></script>
+  <script src="js/saveDrawing.js"></script>
 
 </body>
 </html>
