@@ -17,7 +17,7 @@ body {
 #canvas {
 	display: block;
 	background-color: white;
-	position: relative;
+	position: absolute;
 	top: 5px;
 	left: 5px;
 	box-shadow: 2px 3px 3px blue;
@@ -68,7 +68,7 @@ body {
 	margin-right: 70px;
 	margin-top: 300px;
 	border-radius: 10px;
-	background-color: #ff4dff;
+	background-color: blue;
 }
 
 #Clear{
@@ -128,7 +128,12 @@ button {
 
 }
 
+button:hover {
+	 background-color: #990073;
+}
 footer {
+	position: relative;
+	top: 600px;
 	text-align: center;
 	text-shadow: #EEEE00 0 0 10px;
 }
