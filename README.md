@@ -15,5 +15,5 @@ InstantPaint is a painting web application that allows user to dynamically draw 
 
 
 
-NB: click 'set' color before drawing, HEX color value will be displayed.
+NB: *click 'set' color before drawing, HEX color value will be displayed.
 
