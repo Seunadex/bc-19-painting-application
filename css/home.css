@@ -1,0 +1,75 @@
+body{
+	margin: 0px;
+}
+
+.brush {
+	background-image: url("../img/paints-and-brushes.jpg");
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	/*z-index: -10;*/
+}
+
+.brush-overlay {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+/*	z-index: -5;*/
+	text-align: center;
+
+}
+
+.container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%
+
+}
+
+h1 {
+		margin-bottom: .5em;
+		font-size: 90px;
+		color: white;
+		margin-top: 150px;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		text-shadow: #EEEE00 0 0 10px;
+}
+
+
+a {
+	text-decoration: none;
+	color: white;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.button{
+	font-size: 30px;
+	background-color: blue;
+	padding: 5px;
+	box-shadow: 2px 2px 3px tan;
+	border-radius: 15px;
+
+}
+
+.button:hover {
+	background-color: #ff00bf;
+	color: black;
+	box-shadow: 2px 3px 3px black;
+}
+
+p{
+	font-size: 30px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: white;
+
+}
+.fa {
+	color: white;
+}
