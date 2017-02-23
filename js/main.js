@@ -7,17 +7,20 @@ var dragging = false;
 ctx.lineWidth = radius * 2;
 
 
+
+
+
 var putPoint = function(e){
 	if (dragging) {
 		ctx.lineTo(e.clientX, e.clientY);
 		ctx.strokeStyle = color;
 		ctx.stroke();
-	ctx.beginPath();
-	ctx.arc(e.clientX, e.clientY, radius, 0, Math.PI*2);
-	ctx.fillStyle = color;
-	ctx.fill();
-	ctx.beginPath();
-	ctx.moveTo(e.clientX, e.clientY);
+	  ctx.beginPath();
+	  ctx.arc(e.clientX, e.clientY, radius, 0, Math.PI*2);
+	  ctx.fillStyle = color;
+	  ctx.fill();
+	  ctx.beginPath();
+	  ctx.moveTo(e.clientX, e.clientY);
 }
 };
 
@@ -39,7 +42,9 @@ canvas.addEventListener("mouseup", disengage);
 // Clear the canvas for a new drawing/painting
 function clearCanvas() 
 {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
+
+
 
 
