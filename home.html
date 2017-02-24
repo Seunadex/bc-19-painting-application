@@ -16,7 +16,7 @@
   <h1>InstantPaint</h1>
   <div id="toolbar" class="col-1">
 	  <div id="rad">
-		  Radius <span id="radvalue"></span>
+		  Size <span id="radvalue"></span>
 		  <div id="decrad" class="radctrl">-</div>
 		  <div id="incrad" class="radctrl">+</div>
 	  </div>
@@ -24,16 +24,16 @@
 
   <div id='colors' class="col-2">
     <label>Change Color</label>
-    <input id='color' type="color" onchange='changeColor("value")' ontouchstart='changeColor("value")'/>
+    <input id='color' type="color" onchange='changeCol("value")' ontouchstart='changeCol("value")'/>
    </div>
 
    <div id="set" class="col-3">
-      <button  onclick='newColor()'>Set</button>
-      <span id='colorValue'>color:</span>
+      <button  onclick='getNewColor()'>Set</button>
+      <span id='colorValue'>Color:</span>
     </div>
     <div id="box" class="col-4">
-      <button onclick='clearCanvas()' id='Clear'><i class="fa fa-scissors" aria-hidden="true"></i> Clear</button>
-    	<button onclick="erasePart()" id='erase'><i class="fa fa-eraser" aria-hidden="true"></i> Erase</a></button>
+      <button onclick='clearCanv()' id='Clear'><i class="fa fa-scissors" aria-hidden="true"></i> Clear</button>
+    	<button onclick="erase()" id='erase'><i class="fa fa-eraser" aria-hidden="true"></i> Erase</a></button>
     	<button><a href="#" class="save_btn" id='save' download="my-file-name.png"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</a></button>
     </div>
 
@@ -48,7 +48,6 @@
 	<script src="js/main.js"></script>
 	<script src="js/brush_size.js"></script>
 	<script src="js/color.js"></script> 
-  <script src="js/erase.js"></script>
   <script src="js/saveDrawing.js"></script>
 
 </body>

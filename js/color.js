@@ -1,20 +1,16 @@
-
-function newColor()
-{
-    elColor = document.getElementById('color');
-    cv = document.getElementById('colorValue');
-    cv.innerHTML = "color: " + elColor.value;
-    color = elColor.value;
-
+const getNewColor = function newColor() {
+  elColor = document.getElementById('color');
+  cv = document.getElementById('colorValue');
+  cv.innerHTML = "Color: " + elColor.value;
+  color = elColor.value;
 }
 
 
-function changeColor(new_color) 
-{
-    color = new_color;
+const changeCol = function changeColor(new_color) {
+  color = new_color;
 }
 
-function setColor(color){
+const setNewColor = function setColor(color) {
 	ctx.fillStyle = color;
 	ctx.strokeStyle = color;
 }

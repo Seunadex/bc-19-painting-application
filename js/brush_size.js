@@ -1,5 +1,5 @@
 
-const setRadius = function(newRadius){
+const setRadius = function(newRadius) {
 	if(newRadius < minRad)
 			newRadius = minRad;
 	else if (newRadius > maxRad)
@@ -18,13 +18,14 @@ let minRad = 1,
   	incRad = document.getElementById("incrad");
 
 
-decRad.addEventListener('click', function(){
+decRad.addEventListener('click', function() {
 	radius -= interval;
 	setRadius(radius);
 });
 
-incRad.addEventListener('click', function(){
+incRad.addEventListener('click', function() {
 	radius += interval;
 	setRadius(radius);
 });
+
 setRadius(defaultRad);
