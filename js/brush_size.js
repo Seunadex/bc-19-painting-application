@@ -1,31 +1,31 @@
 
 const setRadius = function(newRadius) {
-	if(newRadius < minRad)
-			newRadius = minRad;
-	else if (newRadius > maxRad)
-		  newRadius = maxRad;
+	if(newRadius < minRadius)
+			newRadius = minRadius;
+	else if (newRadius > maxRadius)
+		  newRadius = maxRadius;
 		ctx.lineWidth = newRadius *2;
 	document.getElementById("radvalue").innerHTML = newRadius;
 		
 	
 }
 
-let minRad = 1,
-   	maxRad = 100,
-   	defaultRad = 10,
+let minRadius = 1,
+   	maxRadius = 100,
+   	defaultRadius = 10,
   	interval = 2,
-  	decRad = document.getElementById('decrad'),
-  	incRad = document.getElementById("incrad");
+  	decRadius = document.getElementById('decradius'),
+  	incRadius = document.getElementById("incradius");
 
 
-decRad.addEventListener('click', function() {
+decRadius.addEventListener('click', function() {
 	radius -= interval;
 	setRadius(radius);
 });
 
-incRad.addEventListener('click', function() {
+incRadius.addEventListener('click', function() {
 	radius += interval;
 	setRadius(radius);
 });
 
-setRadius(defaultRad);
+setRadius(defaultRadius);
