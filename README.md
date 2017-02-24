@@ -3,6 +3,10 @@ https://seunadex.github.io/bc-19-painting-application/
 
 InstantPaint is a painting web application that allows user to dynamically draw shapes and do a lot of painting, it's built with HTML5 canvas and javascript.
 
+#Technologies
+*HTML5
+*JavaScript
+
 
 ##Features:-
 * Hex color palette tool.
